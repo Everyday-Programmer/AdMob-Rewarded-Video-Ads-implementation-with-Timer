@@ -83,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
                                 });
                             }
                         });
+                        rewardedAd.show(MainActivity.this, new OnUserEarnedRewardListener() {
+                            @Override
+                            public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
+
+                            }
+                        });
                         lastAdTime = System.currentTimeMillis();
                     }
                 }
